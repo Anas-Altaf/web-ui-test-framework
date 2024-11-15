@@ -1,12 +1,7 @@
-Feature: Login
+Feature: Feature to test login functionality
 
-  Scenario Outline : Successful login with valid credentials
+  Scenario: Check login is successful with valid credentials from CSV file
     Given User is on login page
-    When User enters username "<username>" and password "<password>"
+    When User enters username and password from CSV
     Then User should be logged in
 
-    Examples:
-      | username | password  |
-      | testuser | password1 |
-      | user2    | password2 |
-      | user3    | password3 |
